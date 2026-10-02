@@ -1,13 +1,14 @@
 require("./xyz.js"); // one module into another
 
-const { calculateSum } = require("./sum");
+const { calculateMultiply, calculateSum } = require("./calculate");
+const data = require("./data.json");
+const util = require("node:util");
 
-var name = "Namaste NodeJS";
+console.log(data);
+// console.log(util);
 
 var a = 10;
 var b = 20;
-var x = 100;
 
 calculateSum(a, b);
-
-console.log(x);
+calculateMultiply(a, b);
