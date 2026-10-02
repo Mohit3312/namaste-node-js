@@ -1,7 +1,6 @@
-// require("./xyz.js"); // one module into another
+require("./xyz.js"); // one module into another
 
-import { calculateSum } from "./sum.js";
-// const { calculateSum } = require("./sum");
+const { calculateSum } = require("./sum");
 
 var name = "Namaste NodeJS";
 
